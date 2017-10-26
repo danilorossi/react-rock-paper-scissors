@@ -1,14 +1,14 @@
 # Instructions
 
+**NOTE: The project itself and this README file is a work in progress.**
+
 ### Requirements
 
 This commands are for a Mac OSX system, you need `node` installed in your system and `gulp` (this is just for building SemanticUI theme).
 
 ### Installing
 
-Expand the .zip archive: it should create a `rock-paper-scissors-game` folder.
-
-Enter the folder:
+Enter the project main folder:
 
 ```
 > cd rock-paper-scissors-game
