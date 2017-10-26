@@ -1,0 +1,176 @@
+
+/** Player controls - shapes */
+
+.game-controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+}
+
+.dimmer.controls-dimmer {
+  background-color: rgba(33, 133, 208, 0.5) !important;
+}
+
+.hand-button {
+  width: 150px;
+  height: 150px;
+  padding: 20% 4%;
+  -webkit-transition: all 0.2s;
+     -moz-transition: all 0.2s;
+      -ms-transition: all 0.2s;
+       -o-transition: all 0.2s;
+          transition: all 0.2s;
+}
+.hand-button:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.hand-button:active {
+  transform: scale(1);
+}
+
+img.hand-image {
+  width: 100%;
+}
+
+
+/** Home screen */
+
+.homescreen-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/images/home_bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/** Home screen - PLAY buttons */
+
+.home-buttons {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 5%;
+  text-align: center;
+}
+.home-buttons .button:not(:last-child) {
+  margin-right: 10px;
+}
+
+/** Home screen - stats: left and right sides */
+
+.home-stats-right,
+.home-stats-left {
+  position: absolute;
+  top: 25%;
+  width: auto;
+}
+.home-stats-right {
+  right: 20px;
+}
+.home-stats-left {
+  left: 20px;
+}
+.home-stats-left .games-table {
+  text-align: center;
+  max-height: 300px;
+  overflow-y: auto;
+}
+.home-stats-left .games-table .ui.list {
+  padding-right: 10px;
+}
+.home-stats-left .table {
+  background: rgba(71, 153, 191, 0.6);
+}
+
+
+/** Game screen score */
+
+.score {
+  color: white;
+  padding-top: 25px;
+}
+.score .progress {
+  width: 90%;
+}
+.score .progress[data-percent="0"] .bar {
+  background-color: transparent !important;
+}
+.left.score .progress {
+  float: right;
+  direction: rtl;
+}
+.right.score .progress {
+  float: left;
+}
+.left.score .label {
+  text-align: right;
+  font-weight: bold;
+}
+.right.score .label {
+  text-align: left;
+  font-weight: bold;
+}
+
+/** Game screen 'versus' image */
+
+.versus-image {
+  text-align: center;
+}
+.versus-image img {
+  margin-top: 25%;
+}
+
+/** Game screen central zone */
+
+.playground {
+  border-top: 10px solid #41acfc;
+  border-bottom: 10px solid #4fbefc;
+
+  background-color: #34ADFF;
+  background-image: -webkit-linear-gradient(30deg, #34ADFF 55%, #4CBFFF 55%);
+  min-height: 400px;
+}
+
+.playground .playground-dimmer {
+  background: rgba(255,255,255,0.4);
+}
+
+/** Game screen central zone: played shapes */
+
+.playground .played-shape {
+  width: 100%;
+  -webkit-transition: all 0.5s;
+     -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+       -o-transition: all 0.5s;
+          transition: all 0.5s;
+}
+.playground .played-shape.winner {
+  -webkit-transform: scale(1.5);
+     -moz-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+       -o-transform: scale(1.5);
+          transform: scale(1.5);
+}
+.playground .played-shape.looser {
+  opacity: 0.6;
+  -webkit-transform: scale(0.5);
+     -moz-transform: scale(0.5);
+      -ms-transform: scale(0.5);
+       -o-transform: scale(0.5);
+          transform: scale(0.5);
+}
+.played-shape {
+  position: absolute;
+  top: 50%;
+}
+.played-shape.player { left: 0; }
+.played-shape.opponent { right: 0; }
