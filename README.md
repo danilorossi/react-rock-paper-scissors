@@ -39,7 +39,7 @@ rock-paper-scissors-game/react-client> npm install
 
 This project is made up by two different project:
 
-* the RodeJS server
+* the NodeJS server
 * the React client
 
 From the root directory (`rock-paper-scissors-game`, in the example), simply run:
